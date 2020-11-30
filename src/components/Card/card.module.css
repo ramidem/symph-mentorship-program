@@ -1,0 +1,32 @@
+.card {
+  background-color: #FFFFFF;
+  border: 1px solid #e6e6e6;
+  border-radius: 5px;
+  padding: 30px;
+  height: 350px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.card p {
+  margin: 0;
+  margin-top: auto;
+  font-size: 14px;
+  display: -webkit-box;
+  display: -moz-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 3;
+  -moz-line-clamp: 3;
+  line-clamp: 3;
+  -webkit-box-orient: vertical;
+  box-orient: vertical;
+}
+
+.card img {
+  border-radius: 50%;
+}
+
+.card:hover {
+  box-shadow: 5px 5px 5px rgb(31, 31, 31, 0.05);
+}
