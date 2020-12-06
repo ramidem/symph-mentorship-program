@@ -4,12 +4,13 @@ import Modal from 'react-modal';
 import styles from "./mentormodal.module.css"
 
 interface MentorDetails {
+  bio: string;
   name: string;
-  position: string;
+  expertise: string;
+  noOfMentees: string;
   image: {
     publicURL: string;
   };
-  bio: string;
 }
 
 Modal.setAppElement('#___gatsby')
@@ -19,15 +20,22 @@ const MentorModal = ({
   closeModal,
   modalIsOpen
 }: {mentor: MentorDetails, closeModal: any, modalIsOpen: any}) => {
+  const {
+    bio,
+    image,
+    name,
+    expertise,
+    noOfMentees,
+  } = mentor;
   const customStyles = {
     overlay: {
       backgroundColor: 'rgba(0, 0, 0, 0.75)'
     },
     content : {
-      top                   : '40%',
+      top                   : '50%',
       left                  : '50%',
       right                 : '20%',
-      bottom                : '10%',
+      height                : '450px',
       marginRight           : '-50%',
       transform             : 'translate(-50%, -50%)'
     }
@@ -38,15 +46,15 @@ const MentorModal = ({
       style={customStyles}
       isOpen={modalIsOpen}
       onRequestClose={closeModal}
-      contentLabel="Example Modal"
     >
       <div className={styles.modal}>
         <div>
-          <img src={mentor?.image?.publicURL} width="200" />
+          <img src={image?.publicURL} width="200" />
         </div>
         <div>
-          <h2>{mentor.name}</h2>
-          <p>{mentor.bio}</p>
+          <h2>{name}</h2>
+          <span>{expertise} | {noOfMentees} mentee/s</span>
+          <p>{bio}</p>
         </div>
       </div>
     </Modal>

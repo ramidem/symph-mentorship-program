@@ -12,21 +12,31 @@ const IndexPage = () => {
     query {
       dataJson {
         mentors {
-          name
-          position
+          bio
+          expertise
           image {
             publicURL
           }
-          bio
+          name
+          noOfMentees
         }
       }
     }
   `)
 
   const { mentors } = data.dataJson;
+  interface MentorDetails {
+    bio: string;
+    name: string;
+    expertise: string;
+    noOfMentees: string | number;
+    image: {
+      publicURL: string;
+    };
+  }
 
   const renderMentors = (): any => {
-    return mentors.map(mentor => {
+    return mentors.map((mentor: MentorDetails) => {
       return (
         <Card
           onModalClick={openModal}
@@ -38,7 +48,7 @@ const IndexPage = () => {
   }
 
   const [modalIsOpen, setIsOpen] = React.useState(false);
-  const [activeMentor, setActiveMentor] = React.useState({});
+  const [activeMentor, setActiveMentor] = React.useState<MentorDetails>();
   function openModal(mentor: any) {
     setIsOpen(true);
     setActiveMentor(mentor);
@@ -51,14 +61,24 @@ const IndexPage = () => {
   return (
     <Layout>
       <SEO title="Home" />
+      <h1>Mentorship Program</h1>
+      <div>
+        <p>The Symph Mentorship Program creates opportunities to connect, build, and enhance Symphers' knowledge and skills as well as learn from experienced mentors. This activity has the potential to empower, guide, and inspire great minds in Symph to become greater as they venture into their careers.</p>
+      </div>
+      <div className={styles.linksDiv}>
+        <a href="http://bit.ly/symph-mentorship-program">Learn More</a>
+        <a href="#">Be a Mentee</a>
+      </div>
       <div className={styles.parent}>
         {renderMentors()}
       </div>
-      <MentorModal
-        closeModal={closeModal}
-        mentor={activeMentor}
-        modalIsOpen={modalIsOpen}
-      />
+      {activeMentor && (
+        <MentorModal
+          closeModal={closeModal}
+          mentor={activeMentor}
+          modalIsOpen={modalIsOpen}
+        />
+      )}
     </Layout>
   )
 }

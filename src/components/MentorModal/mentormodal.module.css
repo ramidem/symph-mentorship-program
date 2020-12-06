@@ -1,9 +1,23 @@
 .modal {
   padding: 30px;
   display: grid;
-  grid-template-columns: minmax(150px, 25%) 1fr;
+}
+
+@media screen and (min-width: 1024px) {
+  .modal {
+    grid-template-columns: minmax(150px, 25%) 1fr;
+  }
 }
 
 .modal img {
   border-radius: 50%;
+}
+
+.modal h2 {
+  margin-bottom: 1rem;
+}
+
+.modal p {
+  margin-top: 1rem;
+  white-space: pre-wrap;
 }

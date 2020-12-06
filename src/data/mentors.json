@@ -2,56 +2,65 @@
   "mentors": [
     {
       "name": "Albert Padin",
-      "position": "CTO, Symph",
+      "expertise": "Running a Tech Company, Startups, Career Growth, Development, Project Management ",
       "image": "../images/albert.jpg",
+      "noOfMentees": "3",
       "bio": "Albert is a developer and entrepreneur who's worked on consumer, enterprise, and government software products. He is the co-founder and CTO of Symph, a design, development, and startup studio. At Symph, he has architected and developed solutions for 500 Startups, Office of the President of the Philippines, and the World Bank."
     },
     {
       "name": "Arnelle Balane",
-      "position": "Web Technologies GDE",
+      "expertise": "Web Development",
       "image": "../images/arnelle.jpg",
+      "noOfMentees": "3",
       "bio": "Arnelle is a Web developer from Cebu, Philippines and a Google Developers Expert for Web Technologies who enjoys building things with good old HTML, CSS, JavaScript, and Web Platform APIs. He is an active volunteer and speaker for GDG Cebu and other local JavaScript communities. When not busy experimenting with new Web APIs, he can also be seen taking photos, playing video games, or practicing his card tricks."
     },
     {
       "name": "Johnrey Evangelista",
-      "position": "Full-stack developer, Symph",
+      "expertise": "Web Development, React.js",
       "image": "../images/johnrey.jpg",
+      "noOfMentees": "1",
       "bio": "Johnrey is an end-to-end developer at Symph. He has developed multiple web and mobile applications using technologies like React, Typescript, and PostgreSQL. He strives to continuously improve and always learn. On his free time, he enjoys watching series or documentaries, trekking, and camping."
     },
     {
       "name": "Franchette Camoro",
-      "position": "Full-stack developer, Symph",
+      "expertise": "Software Development",
       "image": "../images/franchette.jpg",
+      "noOfMentees": "1",
       "bio": "Franchette is a Full Stack Developer at Symph and is the WTM Ambassador for GDG Cebu. She has contributed to many tech events here in Cebu and wishes to see an improvement on the quality of programmers locally. She's also an advocate for mental health awareness, and hopes to create a better environment for future filipinos who struggle and feel alone in their battles.\n\nWhen shes not coding, she tries to either practice the zen life, learn new things about anything under the sun or do some gaming."
     },
     {
       "name": "Raffy Abenoja",
-      "position": "Full-stack developer, Symph",
+      "expertise": "Graphic Illustration, Creative Writing, How to Model",
       "image": "../images/raff.jpg",
+      "noOfMentees": "4",
       "bio": "Raff is a front-end developer-wannabe from Symph. Besides this, he is an artist/illustrator/graphic designer who also used to be a mass communications graduate. He aims to empower people to think outside the box and unleash their inner creativity, no matter the process. He won't bite, though - he promised. Raff needs your help to conquer the world - buy him ko-fi now: https://www.ko-fi.com/gamertheartist"
     },
     {
       "name": "Lenli Tuhoy",
-      "position": "Full-stack developer, Symph",
+      "expertise": "Writing",
       "image": "../images/lenli.jpg",
+      "noOfMentees": "2",
       "bio": "L's Magazine Writer & Editor-in-Chief (Elem- Highschool)\nFORWARD Publications Writer & Associate Editor (College)\nMarketing Content Creator (Symph haha)"
     },
     {
       "name": "Tim Ouano",
-      "position": "Full-stack developer, Symph",
+      "expertise": "Videography",
       "image": "../images/tim.jpg",
+      "noOfMentees": "3",
       "bio": "Tim, a video hobbyist."
     },
     {
       "name": "Dave Overton",
-      "position": "CEO, Symph",
+      "expertise": "Business",
       "image": "../images/dave.jpg",
+      "noOfMentees": "1",
       "bio": "Dave Overton is the Founder and CEO of Symph – a design, development and digital marketing studio in Cebu City, Philippines. Symph designs and develops for brands and startups and creates awesome things that people love. Prior to starting Symph, he was the CIO at Bigfoot - a media and entertainment company – where he oversaw all technology and digital media assets. He has a BA in International Economics from San Diego State University."
     },
     {
       "name": "Dan Pantinople",
-      "position": "CDO, Symph",
+      "expertise": "Design",
       "image": "../images/dan.jpg",
+      "noOfMentees": "1",
       "bio": "In 2013, Dan partnered with Dave and Albert, where he designed and developed websites and mobile apps for internal startups and clients such as 500 Startups, The World Bank and the Office of the President of the Philippines.\n\nSelf-taught and design driven, Dan officially started his design career a few months after dropping out of nursing school. He taught himself how to do digital design and front-end coding, he then started freelance design work for various local and international companies.\n\nHe is in the pursuit of seeking ways to leave a legacy in the community and when Dan is not too busy creating beautiful things, he teaches himself the ways of being a cat person."
     }
   ]
