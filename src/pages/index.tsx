@@ -61,15 +61,20 @@ const IndexPage = () => {
   return (
     <Layout>
       <SEO title="Home" />
-      <h1>Mentorship Program</h1>
-      <div>
-        <p>The Symph Mentorship Program creates opportunities to connect, build, and enhance Symphers' knowledge and skills as well as learn from experienced mentors. This activity has the potential to empower, guide, and inspire great minds in Symph to become greater as they venture into their careers.</p>
+      <div className={styles.copyDiv}>
+        <div className={styles.copy}>
+          <h1>Mentorship Program</h1>
+          <div className={styles.description}>
+            <p>The Symph Mentorship Program creates opportunities to connect, build, and enhance Symphers' knowledge and skills as well as learn from experienced mentors. This activity has the potential to empower, guide, and inspire great minds in Symph to become greater as they venture into their careers.</p>
+          </div>
+          <div className={styles.linksDiv}>
+            <a href="http://bit.ly/symph-mentorship-program">Learn More</a>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSehz1L2CCDktjtpxvGSpnn3zedMcTochLOWBAJ8NdevKxxQMg/viewform">Be a Mentee</a>
+          </div>
+        </div>
       </div>
-      <div className={styles.linksDiv}>
-        <a href="http://bit.ly/symph-mentorship-program">Learn More</a>
-        <a href="#">Be a Mentee</a>
-      </div>
-      <div className={styles.parent}>
+      <h2>Our Mentors</h2>
+      <div className={styles.mentorsDiv}>
         {renderMentors()}
       </div>
       {activeMentor && (

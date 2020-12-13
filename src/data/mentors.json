@@ -47,7 +47,7 @@
       "expertise": "Videography",
       "image": "../images/tim.jpg",
       "noOfMentees": "3",
-      "bio": "Tim, a video hobbyist."
+      "bio": "Tim is a full-stack developer at Symph who on his free time, shoots and edits videos as a hobby."
     },
     {
       "name": "Dave Overton",
@@ -62,6 +62,13 @@
       "image": "../images/dan.jpg",
       "noOfMentees": "1",
       "bio": "In 2013, Dan partnered with Dave and Albert, where he designed and developed websites and mobile apps for internal startups and clients such as 500 Startups, The World Bank and the Office of the President of the Philippines.\n\nSelf-taught and design driven, Dan officially started his design career a few months after dropping out of nursing school. He taught himself how to do digital design and front-end coding, he then started freelance design work for various local and international companies.\n\nHe is in the pursuit of seeking ways to leave a legacy in the community and when Dan is not too busy creating beautiful things, he teaches himself the ways of being a cat person."
+    },
+    {
+      "name": "Jarrhey de la Peña",
+      "expertise": "Project Management",
+      "image": "../images/jarrhey.jpg",
+      "noOfMentees": "1",
+      "bio": "Jarrhey is the Chief of Operations in Symph where he also previously worked as a Project Manager. He graduated with a degree of BS Computer Engineering. Freelanced in Photography, Video, Frontend Dev during college."
     }
   ]
 }

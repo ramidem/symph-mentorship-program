@@ -2,7 +2,41 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.parent {
+.copyDiv {
+  color: #FFFFFF;
+  margin-bottom: 30px;
+  height: 90vh;
+  width: 100%;
+  background: linear-gradient( 
+    to right bottom,rgba(15, 15, 15, 0.5),
+    rgba(35, 35, 35, 0.5)),
+    url('../images/mentorship.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: bottom;
+  background-size: cover;
+  align-items: center;
+  position: relative;
+}
+
+.copy {
+  padding: 20px;
+  position: absolute;
+  top: 45%;
+  -ms-transform: translate(0, -45%);
+  transform: translate(0, -45%);
+}
+
+.copy h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  margin-left: 50px;
+}
+
+.mentorsDiv {
+  padding: 0 50px;
   display: grid;
   grid-gap: 1rem;
   margin-top: 2rem;
@@ -10,7 +44,7 @@
 }
 
 @media screen and (min-width: 375px) {
-  .parent {
+  .mentorsDiv {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   }
 }
@@ -21,15 +55,49 @@
 
 .linksDiv a {
   text-transform: uppercase;
-  font-size: 16px;
-  font-weight: 500;
+  font-size: 0.8rem;
+  font-weight: 600;
   text-decoration: none;
   padding: 10px 20px;
-  border-radius: 10px;
-  background-color: #2EA2FF;
+  border-radius: 5px;
+  background: linear-gradient(#2EA2FF, #117dd6);
+  box-shadow: 4px 4px 8px rgb(34, 34, 34, 0.8);
   color: #ffffff;
 }
 
 .linksDiv a:hover {
   background-color: #026abe;
+}
+
+@media screen and (max-width: 375px) {
+  .linksDiv a:first-child {
+    margin-right: 0;
+    margin-bottom: 1rem;
+  }
+
+  .linksDiv {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .copyDiv {
+    color: #FFFFFF;
+    padding: 80px;
+    margin-bottom: 30px;
+    height: 70vh;
+    width: 100%;
+  }
+  
+  .copy {
+    position: absolute;
+    top: 45%;
+    -ms-transform: translate(0, -45%);
+    transform: translate(0, -45%);
+  }
+  
+  .description {
+    width: 70%;
+  }  
 }
