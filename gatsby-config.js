@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `Symph Mentorship Program`,
+    description: `The Symph Mentorship Program creates opportunities to connect, build, and enhance Symphers' knowledge and skills as well as learn from experienced mentors. This activity has the potential to empower, guide, and inspire great minds in Symph to become greater as they venture into their careers.`,
+    author: `symph`,
   },
   plugins: [
     `gatsby-transformer-json`,

@@ -68,8 +68,8 @@ const IndexPage = () => {
             <p>The Symph Mentorship Program creates opportunities to connect, build, and enhance Symphers' knowledge and skills as well as learn from experienced mentors. This activity has the potential to empower, guide, and inspire great minds in Symph to become greater as they venture into their careers.</p>
           </div>
           <div className={styles.linksDiv}>
-            <a href="http://bit.ly/symph-mentorship-program">Learn More</a>
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLSehz1L2CCDktjtpxvGSpnn3zedMcTochLOWBAJ8NdevKxxQMg/viewform">Be a Mentee</a>
+            <a href="https://bit.ly/symph-mentorship">Learn More</a>
+            <a href="https://forms.gle/DLBTke8sBqCWLCXH7">Be a Mentee</a>
           </div>
         </div>
       </div>
