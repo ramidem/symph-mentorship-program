@@ -69,6 +69,13 @@
       "image": "../images/jarrhey.jpg",
       "noOfMentees": "1",
       "bio": "Jarrhey is the Chief of Operations in Symph where he also previously worked as a Project Manager. He graduated with a degree of BS Computer Engineering. Freelanced in Photography, Video, Frontend Dev during college."
+    },
+    {
+      "name": "Bryant Gonzales",
+      "expertise": "Personal Finance Management",
+      "image": "../images/bryant.jpg",
+      "noOfMentees": "1",
+      "bio": "Bryant is the Finance Manager at Symph - and the go-to-finance-coach of symphers at late night. With a degree in BS Economics - Business, experience handling corporate finance, and an improved handling of his personal finance (yey!), Bryant hopes to be of help for you to realize financial independece.\n\nHe is currently studying Master of Public Management at UP Open University and a Data Scientist scholar at DOST's Project SPARTA."
     }
   ]
 }
