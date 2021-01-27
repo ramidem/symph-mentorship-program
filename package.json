@@ -1,9 +1,9 @@
 {
   "name": "gatsby-starter-default",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "description": "The Symph Mentorship Program creates opportunities to connect, build, and enhance Symphers' knowledge and skills as well as learn from experienced mentors.",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Symph <info@symph.co>",
   "dependencies": {
     "@types/react-modal": "^3.10.6",
     "gatsby": "^2.26.1",
@@ -26,7 +26,7 @@
     "prettier": "2.1.2"
   },
   "keywords": [
-    "gatsby"
+    "symph, mentors, gatsby"
   ],
   "license": "0BSD",
   "scripts": {
@@ -40,9 +40,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+    "url": "https://github.com/jesmrie/mentorship-program"
   },
   "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "url": "https://github.com/jesmrie/mentorship-program"
   }
 }
