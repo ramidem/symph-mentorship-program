@@ -5,6 +5,14 @@
   src: local('Lato'), url('../fonts/Lato-Regular.ttf') format('truetype');
 }
 
+:root {
+  --primary-color: #3EB6D0;
+}
+
 body {
   font-family: 'Lato', sans-serif;
+}
+
+a {
+  color:var(--primary-color);
 }

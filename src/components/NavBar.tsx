@@ -1,7 +1,7 @@
 function NavBar() {
   return (
     <>
-      <h1>Symph Mentorship Program</h1>
+      <h1><a href='/'>Symph Mentorship Program</a></h1>
       <ul>
         <li>How it Works</li>
         <li>Mentors</li>
