@@ -5,15 +5,15 @@ const Title = styled(NavbarBrand)`
   font-size: 24px;
   font-weight: 900;
 
-  a {
-    color: var(--primary-color);
+  & > a {
+    color: var(--primary-color)!important;
   }
 `;
 
 function SiteTitle() {
   return (
-    <Title>
-      <a href="/">Symph Mentorship Program</a>
+    <Title href="/">
+      Symph Mentorship Program
     </Title>
   );
 }

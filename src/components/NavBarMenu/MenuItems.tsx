@@ -1,5 +1,6 @@
-import { Button } from 'reactstrap';
 import styled from 'styled-components';
+
+import { StyledButton } from '../../shared/styledComponents';
 
 const Item = styled.li`
   margin-right: 40px;
@@ -14,20 +15,10 @@ const Item = styled.li`
   }
 `;
 
-const StyledButton = styled(Button)`
-  padding: 10px 60px;
-  background: #3eb6d0;
-  border: none;
-  border-radius: 9999px;
-  color: #ffffff;
-`;
-
 function MenuItems() {
   const signInButton = (
     <li key="signin">
-      <a href="/">
-        <StyledButton>Sign In</StyledButton>
-      </a>
+      <StyledButton href="/">Sign In</StyledButton>
     </li>
   );
 

@@ -6,6 +6,8 @@
 :root {
   --primary-color: #3EB6D0;
   --secondary-color: #5C5C5C;
+  --primary: #3EB6D0;
+  --secondary: #5C5C5C;
 }
 
 html {
