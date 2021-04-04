@@ -1,3 +1,5 @@
+import { Container } from "reactstrap";
+
 import Footer from "./components/Footer";
 import MainSection from "./components/Landing/MainSection";
 import NavBar from "./components/NavBar";
@@ -7,9 +9,11 @@ function App() {
   return (
     <>
       <NavBar />
-      <MainSection />
-      <SubSection />
-      <Footer />
+      <Container>
+        <MainSection />
+        <SubSection />
+        <Footer />
+      </Container>
     </>
   );
 }

@@ -5,9 +5,15 @@
 
 :root {
   --primary-color: #3EB6D0;
+  --secondary-color: #5C5C5C;
+}
+
+html {
+  font-size: 18px;
 }
 
 body {
+  color: var(--secondary-color);
   font-family: 'Lato', sans-serif;
 }
 

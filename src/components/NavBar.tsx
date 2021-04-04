@@ -1,16 +1,15 @@
+import useWindowSize from "../hooks/useWindowSize";
+
+import DesktopNavBar from "./NavBarMenu/DesktopNavBar";
+import MobileNavBar from "./NavBarMenu/MobileNavBar";
+
 function NavBar() {
-  return (
-    <>
-      <h1><a href='/'>Symph Mentorship Program</a></h1>
-      <ul>
-        <li>How it Works</li>
-        <li>Mentors</li>
-        <li>Become a Mentee</li>
-        <li>Blog</li>
-        <li><button>Sign In</button></li>
-      </ul>
-    </>
-  )
+  const size = useWindowSize()
+
+  const shouldShowToggleMenu =
+    (size.width as number) <= 1200 ? <MobileNavBar /> : <DesktopNavBar />
+
+  return <>{shouldShowToggleMenu}</>
 }
 
 export default NavBar;
