@@ -12,6 +12,7 @@
     "@types/react-dom": "^17.0.1",
     "bootstrap": "^4.6.0",
     "customize-cra": "^1.0.0",
+    "husky": "^6.0.0",
     "react": "^17.0.1",
     "react-app-rewire-hot-loader": "^2.0.1",
     "react-dom": "^17.0.1",
@@ -28,6 +29,7 @@
     "lint": "npm run lint:ts --fix && npm run lint:css",
     "lint:css": "stylelint './src/**/*.tsx'",
     "lint:ts": "eslint --ext .ts,.tsx ./src/ --fix",
+    "lint-staged": "lint-staged",
     "start": "react-app-rewired start",
     "test": "react-scripts test"
   },
@@ -35,6 +37,19 @@
     "extends": [
       "react-app",
       "react-app/jest"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "src/**/*.{ts,tsx}": [
+      "npm run lint:ts"
+    ],
+    "src/**/*.{tsx}": [
+      "npm run lint:css"
     ]
   },
   "browserslist": {
@@ -57,6 +72,7 @@
     "eslint-config-airbnb": "^18.2.1",
     "eslint-config-react-app": "^6.0.0",
     "eslint-plugin-react": "^7.23.1",
+    "lint-staged": "^10.5.4",
     "react-app-rewired": "^2.1.8",
     "stylelint": "^13.12.0",
     "stylelint-config-recommended": "^4.0.0",
