@@ -2,10 +2,10 @@ import {
   Container,
   Nav,
   Navbar,
-} from "reactstrap";
+} from 'reactstrap';
 
-import MenuItems from "./MenuItems";
-import SiteTitle from "./SiteTitle";
+import MenuItems from './MenuItems';
+import SiteTitle from './SiteTitle';
 
 function DesktopNavBar() {
   return (
@@ -18,7 +18,7 @@ function DesktopNavBar() {
         </Nav>
       </Container>
     </Navbar>
-  )
+  );
 }
 
 export default DesktopNavBar;

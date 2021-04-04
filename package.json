@@ -11,8 +11,11 @@
     "@types/react": "^17.0.3",
     "@types/react-dom": "^17.0.1",
     "bootstrap": "^4.6.0",
+    "customize-cra": "^1.0.0",
     "react": "^17.0.1",
+    "react-app-rewire-hot-loader": "^2.0.1",
     "react-dom": "^17.0.1",
+    "react-hot-loader": "^4.13.0",
     "react-scripts": "4.0.3",
     "reactstrap": "^8.9.0",
     "styled-components": "^5.2.1",
@@ -20,10 +23,13 @@
     "web-vitals": "^1.1.0"
   },
   "scripts": {
-    "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "lint": "npm run lint:ts --fix && npm run lint:css",
+    "lint:css": "stylelint './src/**/*.tsx'",
+    "lint:ts": "eslint --ext .ts,.tsx ./src/ --fix",
+    "start": "react-app-rewired start",
+    "test": "react-scripts test"
   },
   "eslintConfig": {
     "extends": [
@@ -44,6 +50,18 @@
     ]
   },
   "devDependencies": {
-    "@types/styled-components": "^5.1.9"
+    "@hot-loader/react-dom": "^17.0.1",
+    "@types/styled-components": "^5.1.9",
+    "@typescript-eslint/eslint-plugin": "^4.20.0",
+    "@typescript-eslint/parser": "^4.20.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-config-react-app": "^6.0.0",
+    "eslint-plugin-react": "^7.23.1",
+    "react-app-rewired": "^2.1.8",
+    "stylelint": "^13.12.0",
+    "stylelint-config-recommended": "^4.0.0",
+    "stylelint-config-styled-components": "^0.1.1",
+    "stylelint-order": "^4.1.0",
+    "stylelint-processor-styled-components": "^1.10.0"
   }
 }

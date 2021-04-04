@@ -1,18 +1,18 @@
-import { useState } from "react";
+import { useState } from 'react';
 import {
   Collapse,
   Container,
   Nav,
   Navbar,
-  NavbarToggler
-} from "reactstrap";
+  NavbarToggler,
+} from 'reactstrap';
 
-import MenuItems from "./MenuItems";
-import SiteTitle from "./SiteTitle";
+import MenuItems from './MenuItems';
+import SiteTitle from './SiteTitle';
 
 function MobileNavBar() {
-  const [collapsed, setCollapsed] = useState(true)
-  const toggleNavbar = () => setCollapsed(!collapsed)
+  const [collapsed, setCollapsed] = useState(true);
+  const toggleNavbar = () => setCollapsed(!collapsed);
 
   return (
     <Navbar light>
@@ -28,7 +28,7 @@ function MobileNavBar() {
         </Collapse>
       </Container>
     </Navbar>
-  )
+  );
 }
 
 export default MobileNavBar;

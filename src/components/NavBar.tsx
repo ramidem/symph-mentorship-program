@@ -1,15 +1,15 @@
-import useWindowSize from "../hooks/useWindowSize";
+import useWindowSize from '../hooks/useWindowSize';
 
-import DesktopNavBar from "./NavBarMenu/DesktopNavBar";
-import MobileNavBar from "./NavBarMenu/MobileNavBar";
+import DesktopNavBar from './NavBarMenu/DesktopNavBar';
+import MobileNavBar from './NavBarMenu/MobileNavBar';
 
 function NavBar() {
-  const size = useWindowSize()
+  const size = useWindowSize();
 
-  const shouldShowToggleMenu =
-    (size.width as number) <= 1200 ? <MobileNavBar /> : <DesktopNavBar />
+  const isLessThan2000 = size.width as number <= 1200;
+  const shouldShowToggleMenu = isLessThan2000 ? <MobileNavBar /> : <DesktopNavBar />;
 
-  return <>{shouldShowToggleMenu}</>
+  return <>{shouldShowToggleMenu}</>;
 }
 
 export default NavBar;
