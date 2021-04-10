@@ -14,8 +14,6 @@ const HeadingWrapper = styled.div`
 `;
 
 const HeadingOne = styled.h1`
-  font-size: 64px;
-  font-weight: 700;
   color: var(--primary-color);
 `;
 
