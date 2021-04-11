@@ -1,5 +1,5 @@
-import PageHeading from './Landing/PageHeading';
-import SubSection from './Landing/SubSection';
+import PageHeading from '../components/Landing/PageHeading';
+import SubSection from '../components/Landing/SubSection';
 
 function LandingPage() {
   return (
