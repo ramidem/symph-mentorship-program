@@ -1,0 +1,25 @@
+{
+  "short_name": "Symph Mentorship Program",
+  "name": "The Symph Mentorship Program creates opportunities to connect, build, and enhance Symphers' knowledge and skills as well as learn from experienced mentors.",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "logo192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "logo512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#3EB6D0",
+  "background_color": "#ffffff"
+}
