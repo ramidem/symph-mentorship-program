@@ -3,7 +3,7 @@ import { Container } from 'reactstrap';
 import Footer from './components/Footer';
 // import LandingPage from './pages/LandingPage';
 import NavBar from './components/NavBar';
-import Mentors from './pages/Mentors';
+import MentorsPage from './pages/MentorsPage';
 
 function App() {
   return (
@@ -11,7 +11,7 @@ function App() {
       <NavBar />
       <Container>
         {/* <LandingPage /> */}
-        <Mentors />
+        <MentorsPage />
         <Footer />
       </Container>
     </>
