@@ -5,8 +5,9 @@
     "@typescript-eslint"
   ],
   "extends": [
+    "airbnb",
     "react-app",
-    "airbnb"
+    "plugin:react-hooks/recommended"
   ],
   "settings": {
     "import/extensions": [
