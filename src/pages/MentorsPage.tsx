@@ -1,5 +1,5 @@
-import { Col, Row } from 'reactstrap';
 import styled from 'styled-components';
+import { Col, Row } from 'reactstrap';
 import { HeadingOne, HeadingParagraph } from '../shared/styledComponents';
 import { mentors } from '../data/mentors';
 
@@ -8,7 +8,7 @@ import { mentors } from '../data/mentors';
 const MentorCard = styled.div`
   position: relative;
   background-color: white;
-  border: 2px solid #F4F4F4;
+  border: 2px solid #f4f4f4;
   border-radius: 20px;
   overflow: hidden;
 `;
@@ -17,7 +17,7 @@ const MentorStatus = styled.div`
   position: absolute;
   height: 15px;
   width: 15px;
-  background-color: #A1E3B4;
+  background-color: #a1e3b4;
   border-radius: 50%;
   top: 15px;
   right: 15px;
@@ -43,7 +43,7 @@ const MentorImageContainer = styled.div`
   background-color: white;
   border: 1px solid var(--primary-color);
   border-radius: 9999px;
-  
+
   .innerImage {
     display: flex;
     height: 100%;
@@ -57,9 +57,9 @@ const MentorImageContainer = styled.div`
 `;
 
 const MentorName = styled.h2`
-font-size: 18px;
-line-height: 18px;
-color: var(--primary-color);
+  font-size: 18px;
+  line-height: 18px;
+  color: var(--primary-color);
 `;
 
 const MentorTitle = styled.p`
@@ -67,12 +67,12 @@ const MentorTitle = styled.p`
   font-size: 12px;
   font-weight: 700;
   letter-spacing: 1px;
-  color: #8C8C8C;
+  color: #8c8c8c;
 `;
 
 function MentorsPage() {
   const renderMentorsCards = mentors.map((mentor) => (
-    <Col md={6} lg={4} className="mb-3">
+    <Col md={6} lg={4} className="mb-3" key={mentor.name}>
       <MentorCard>
         <MentorStatus />
         <MentorDetails>
@@ -103,15 +103,13 @@ function MentorsPage() {
       <Row>
         <Col md={6}>
           <HeadingParagraph>
-            Level up your career by learning from our experienced mentors.
-            Be empowered and inspired as they teach you their expertise.
+            Level up your career by learning from our experienced mentors. Be
+            empowered and inspired as they teach you their expertise.
           </HeadingParagraph>
         </Col>
       </Row>
 
-      <Row>
-        {renderMentorsCards}
-      </Row>
+      <Row>{renderMentorsCards}</Row>
     </>
   );
 }
