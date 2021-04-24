@@ -23,7 +23,7 @@ export const mentors: Mentor[] = [
   {
     name: 'Albert Padin',
     expertise:
-      'Running a Tech Company, Startups, Career Growth, Development, Project Management ',
+      'Chief Technology Office, Symph',
     image: albertImg,
     numberOfMentees: 3,
     bio:
@@ -31,7 +31,7 @@ export const mentors: Mentor[] = [
   },
   {
     name: 'Arnelle Balane',
-    expertise: 'Web Development',
+    expertise: 'GDE, Web Development',
     image: arnelleImg,
     numberOfMentees: 3,
     bio:
@@ -39,7 +39,7 @@ export const mentors: Mentor[] = [
   },
   {
     name: 'Johnrey Evangelista',
-    expertise: 'Web Development, React.js',
+    expertise: 'Full-Stack Developer, Symph',
     image: johnreyImg,
     numberOfMentees: 1,
     bio:
@@ -47,7 +47,7 @@ export const mentors: Mentor[] = [
   },
   {
     name: 'Franchette Camoro',
-    expertise: 'Software Development',
+    expertise: 'Full-Stack Developer, Symph',
     image: franchetteImg,
     numberOfMentees: 1,
     bio:
@@ -55,7 +55,7 @@ export const mentors: Mentor[] = [
   },
   {
     name: 'Raffy Abenoja',
-    expertise: 'Graphic Illustration, Creative Writing',
+    expertise: 'Graphics Designer, Symph',
     image: raffImg,
     numberOfMentees: 4,
     bio:
@@ -63,7 +63,7 @@ export const mentors: Mentor[] = [
   },
   {
     name: 'Lenli Tuhoy',
-    expertise: 'Writing',
+    expertise: 'Content Creator, Symph',
     image: lenliImg,
     numberOfMentees: 2,
     bio:
@@ -71,7 +71,7 @@ export const mentors: Mentor[] = [
   },
   {
     name: 'Tim Ouano',
-    expertise: 'Videography',
+    expertise: 'Full-Stack Developer, Symph',
     image: timImg,
     numberOfMentees: 3,
     bio:

@@ -57,36 +57,37 @@ const MentorImageContainer = styled.div`
 `;
 
 const MentorName = styled.h2`
-font-size: 24px;
-line-height: 29px;
+font-size: 18px;
+line-height: 18px;
 color: var(--primary-color);
 `;
 
 const MentorTitle = styled.p`
   margin: 0;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 700;
+  letter-spacing: 1px;
   color: #8C8C8C;
 `;
 
 function MentorsPage() {
-  const renderMentors = mentors.map((item) => (
-    <Col md={6} lg={4}>
+  const renderMentorsCards = mentors.map((mentor) => (
+    <Col md={6} lg={4} className="mb-3">
       <MentorCard>
         <MentorStatus />
         <MentorDetails>
           <MentorImageContainer>
             <div className="innerImage">
               <img
-                src={item.image}
-                alt={item.name}
+                src={mentor.image}
+                alt={mentor.name}
                 width="auto"
                 height="100%"
               />
             </div>
           </MentorImageContainer>
-          <MentorName>{item.name}</MentorName>
-          <MentorTitle>{item.expertise}</MentorTitle>
+          <MentorName>{mentor.name}</MentorName>
+          <MentorTitle>{mentor.expertise}</MentorTitle>
         </MentorDetails>
       </MentorCard>
     </Col>
@@ -109,7 +110,7 @@ function MentorsPage() {
       </Row>
 
       <Row>
-        {renderMentors}
+        {renderMentorsCards}
       </Row>
     </>
   );
