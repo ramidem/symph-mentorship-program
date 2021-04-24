@@ -25,7 +25,6 @@ function MenuItems() {
   const menu = [
     { link: 'https://bit.ly/symph-mentorship', name: 'How it Works' },
     { link: '/link1', name: 'Mentors' },
-    { link: '/link2', name: 'Blog' },
     { link: 'https://forms.gle/DLBTke8sBqCWLCXH7', name: 'Become a Mentee' },
   ];
 
