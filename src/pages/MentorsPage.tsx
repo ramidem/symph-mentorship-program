@@ -4,6 +4,7 @@ import { Col, Row } from 'reactstrap';
 import {
   HeadingOne,
   HeadingParagraph,
+  LearnMore,
   MentorImageContainer,
   StyledButton,
 } from '../shared/styledComponents';
@@ -132,26 +133,4 @@ const MentorsPageHeading = styled(Row)`
 
 const MentorsPageSubHeading = styled(Row)`
   margin-bottom: 70px;
-`;
-
-const LearnMore = styled(Row)`
-  margin-top: 90px;
-  text-align: center;
-
-  div {
-    width: 100%;
-    text-align: center;
-  }
-
-  a {
-    padding: 10px 60px;
-    background: #3eb6d0;
-    border: none;
-    border-radius: 9999px;
-    color: #ffffff;
-
-    &:hover, &:active, &:focus {
-      background-color: var(--hover-state) !important;
-    }
-  }
 `;

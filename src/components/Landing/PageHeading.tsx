@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { Col, Row } from 'reactstrap';
 
-import { HeadingOne, HeadingParagraph, StyledButton } from '../../shared/styledComponents';
+import { HeadingOne, HeadingParagraph } from '../../shared/styledComponents';
 import officeGirl from '../../assets/images/office_girl.svg';
 
 const HeadingWrapper = styled.div`
@@ -23,10 +23,17 @@ function PageHeading() {
       <Row>
         <Col md={12} lg={6}>
           <HeadingParagraph>
-            Create opportunities to connect, build, and enhance your knowledge and
-            skills as well as learn from experienced mentors
+            Create opportunities to connect, build, and enhance your knowledge
+            and skills as well as learn from experienced mentors
           </HeadingParagraph>
-          <StyledButton size="lg" className="mt-3">Learn More</StyledButton>
+          <LearnMoreAnchor
+            className="btn btn-lg btn-primary"
+            href="https://bit.ly/symph-mentorship"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Learn More
+          </LearnMoreAnchor>
         </Col>
       </Row>
     </HeadingWrapper>
@@ -34,3 +41,15 @@ function PageHeading() {
 }
 
 export default PageHeading;
+
+const LearnMoreAnchor = styled.a`
+  padding: 10px 60px;
+  background: #3eb6d0;
+  border: none;
+  border-radius: 9999px;
+  color: #ffffff;
+
+  &:hover, &:active, &:focus {
+    background-color: var(--hover-state) !important;
+  }
+`;

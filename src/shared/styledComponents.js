@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { Button } from 'reactstrap';
+import { Button, Row } from 'reactstrap';
 
 export const HeadingOne = styled.h1`
   color: var(--primary-color);
@@ -44,5 +44,27 @@ export const MentorImageContainer = styled.div`
     border-radius: 50%;
     overflow: hidden;
     text-align: center;
+  }
+`;
+
+export const LearnMore = styled(Row)`
+  margin-top: 90px;
+  text-align: center;
+
+  div {
+    width: 100%;
+    text-align: center;
+  }
+
+  a {
+    padding: 10px 60px;
+    background: #3eb6d0;
+    border: none;
+    border-radius: 9999px;
+    color: #ffffff;
+
+    &:hover, &:active, &:focus {
+      background-color: var(--hover-state) !important;
+    }
   }
 `;
