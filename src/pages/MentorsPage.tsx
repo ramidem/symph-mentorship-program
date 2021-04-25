@@ -1,7 +1,9 @@
+import React, { useState } from 'react';
 import styled from 'styled-components';
 import { Col, Row } from 'reactstrap';
 import { HeadingOne, HeadingParagraph } from '../shared/styledComponents';
 import { mentors } from '../data/mentors';
+import MentorModal from '../components/Modals/MentorModal';
 
 // import mentorImg from '../assets/images/mentor.png';
 
@@ -71,9 +73,16 @@ const MentorTitle = styled.p`
 `;
 
 function MentorsPage() {
+  const [modal, setModal] = useState(false);
+  const [selectedMentor, setSelectedMentor] = useState<any>();
+  const toggle = (mentor: any) => {
+    setModal(!modal);
+    setSelectedMentor(mentor);
+  };
+
   const renderMentorsCards = mentors.map((mentor) => (
     <Col md={6} lg={4} className="mb-3" key={mentor.name}>
-      <MentorCard>
+      <MentorCard onClick={() => toggle(mentor)}>
         <MentorStatus />
         <MentorDetails>
           <MentorImageContainer>
@@ -110,6 +119,7 @@ function MentorsPage() {
       </Row>
 
       <Row>{renderMentorsCards}</Row>
+      <MentorModal toggle={toggle} modal={modal} mentor={selectedMentor} />
     </>
   );
 }
