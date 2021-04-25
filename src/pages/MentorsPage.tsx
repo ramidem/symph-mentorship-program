@@ -108,7 +108,14 @@ function MentorsPage() {
       <LearnMore>
         <div>
           <h6 className="mb-3">Want to learn from them?</h6>
-          <a href="/" className="btn btn-lg btn-primary">Become a Mentee</a>
+          <a
+            href="https://forms.gle/DLBTke8sBqCWLCXH7"
+            target="_blank"
+            className="btn btn-lg btn-primary"
+            rel="noreferrer"
+          >
+            Become a Mentee
+          </a>
         </div>
       </LearnMore>
 
@@ -142,5 +149,9 @@ const LearnMore = styled(Row)`
     border: none;
     border-radius: 9999px;
     color: #ffffff;
+
+    &:hover, &:active, &:focus {
+      background-color: var(--hover-state) !important;
+    }
   }
 `;

@@ -15,6 +15,15 @@ export const StyledButton = styled(Button)`
   border: none;
   border-radius: 9999px;
   color: #ffffff;
+  background-color: var(--primary-color);
+
+  &:hover, &:active, &:focus {
+    background-color: var(--hover-state) !important;
+  }
+  
+  &:disabled {
+    background-color: var(--disabled-state) !important;
+  }
 `;
 
 export const MentorImageContainer = styled.div`

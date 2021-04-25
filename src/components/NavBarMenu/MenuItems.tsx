@@ -18,11 +18,11 @@ const Item = styled.li`
 `;
 
 function MenuItems() {
-  const signInButton = (
-    <li key="signin">
-      <StyledButton href="/">Sign In</StyledButton>
-    </li>
-  );
+  // const signInButton = (
+  //   <li key="signin">
+  //     <StyledButton href="/" disabled>Sign In</StyledButton>
+  //   </li>
+  // );
 
   const menu = [
     { link: 'https://bit.ly/symph-mentorship', name: 'How it Works' },
@@ -41,8 +41,8 @@ function MenuItems() {
           </a>
         )}
       </Item>
-    ))
-    .concat(signInButton);
+    ));
+    // .concat(signInButton);
 
   return (
     <>
