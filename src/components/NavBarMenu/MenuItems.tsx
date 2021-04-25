@@ -1,3 +1,5 @@
+import React from 'react';
+import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
 import { StyledButton } from '../../shared/styledComponents';
@@ -24,14 +26,20 @@ function MenuItems() {
 
   const menu = [
     { link: 'https://bit.ly/symph-mentorship', name: 'How it Works' },
-    { link: '/link1', name: 'Mentors' },
+    { link: '/mentors', name: 'Mentors' },
     { link: 'https://forms.gle/DLBTke8sBqCWLCXH7', name: 'Become a Mentee' },
   ];
 
   const menuItems = menu
     .map((item) => (
       <Item key={item.link}>
-        <a href={item.link}>{item.name}</a>
+        {item.link === '/mentors' ? (
+          <Link to={item.link}>{item.name}</Link>
+        ) : (
+          <a href={item.link} target="_blank" rel="noreferrer">
+            {item.name}
+          </a>
+        )}
       </Item>
     ))
     .concat(signInButton);

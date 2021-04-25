@@ -1,3 +1,5 @@
+import React from 'react';
+import { Link } from 'react-router-dom';
 import { NavbarBrand } from 'reactstrap';
 import styled from 'styled-components';
 
@@ -12,8 +14,8 @@ const Title = styled(NavbarBrand)`
 
 function SiteTitle() {
   return (
-    <Title href="/">
-      Symph Mentorship Program
+    <Title>
+      <Link to="/">Symph Mentorship Program</Link>
     </Title>
   );
 }
