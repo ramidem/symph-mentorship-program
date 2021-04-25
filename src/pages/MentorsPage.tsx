@@ -1,7 +1,12 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
 import { Col, Row } from 'reactstrap';
-import { HeadingOne, HeadingParagraph, MentorImageContainer } from '../shared/styledComponents';
+import {
+  HeadingOne,
+  HeadingParagraph,
+  MentorImageContainer,
+  StyledButton,
+} from '../shared/styledComponents';
 import { mentors } from '../data/mentors';
 import MentorModal from '../components/Modals/MentorModal';
 
@@ -99,9 +104,35 @@ function MentorsPage() {
       </Row>
 
       <Row>{renderMentorsCards}</Row>
+
+      <LearnMore>
+        <div>
+          <h6 className="mb-3">Want to learn from them?</h6>
+          <a href="/" className="btn btn-lg btn-primary">Become a Mentee</a>
+        </div>
+      </LearnMore>
+
       <MentorModal toggle={toggle} modal={modal} mentor={selectedMentor} />
     </>
   );
 }
 
 export default MentorsPage;
+
+const LearnMore = styled(Row)`
+  margin-top: 90px;
+  text-align: center;
+
+  div {
+    width: 100%;
+    text-align: center;
+  }
+
+  a {
+    padding: 10px 60px;
+    background: #3eb6d0;
+    border: none;
+    border-radius: 9999px;
+    color: #ffffff;
+  }
+`;
