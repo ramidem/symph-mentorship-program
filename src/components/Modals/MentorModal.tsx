@@ -1,7 +1,12 @@
+import React from 'react';
 import {
+  Col,
   Modal,
   ModalBody,
+  Row,
 } from 'reactstrap';
+import styled from 'styled-components';
+import { MentorImageContainer } from '../../shared/styledComponents';
 
 const ModalExample = (props: any) => {
   const {
@@ -14,18 +19,35 @@ const ModalExample = (props: any) => {
     <>
       <Modal
         backdrop
+        centered
         isOpen={modal}
         toggle={toggle}
+        size="xl"
       >
         <ModalBody>
-          <h1>{mentor?.name}</h1>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.
+          <Row className="p-5">
+            <Col md={12} lg={2} className="mr-5">
+              <MentorImageContainer>
+                <div className="innerImage">
+                  <img
+                    src={mentor?.image}
+                    alt={mentor?.name}
+                    width="auto"
+                    height="100%"
+                  />
+                </div>
+              </MentorImageContainer>
+            </Col>
+            <ModalBodyCol md={12} lg={8}>
+              <h5>{mentor?.name}</h5>
+              <p className="title">{mentor?.expertise}</p>
+              <p>{mentor?.bio}</p>
+              <p className="topics">
+                <strong>TOPICS: </strong>
+                {mentor?.topics}
+              </p>
+            </ModalBodyCol>
+          </Row>
         </ModalBody>
       </Modal>
     </>
@@ -33,3 +55,29 @@ const ModalExample = (props: any) => {
 };
 
 export default ModalExample;
+
+const ModalBodyCol = styled(Col)`
+  h5 {
+    text-transform: uppercase;
+    color: var(--primary-color);
+  }
+
+  .title {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #8c8c8c;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 22px;
+  }
+
+  .topics {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 29px;
+
+    strong {
+      color: #9c9c9c;
+    }
+  }
+`;

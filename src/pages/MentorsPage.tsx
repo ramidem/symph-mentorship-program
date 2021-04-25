@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
 import { Col, Row } from 'reactstrap';
-import { HeadingOne, HeadingParagraph } from '../shared/styledComponents';
+import { HeadingOne, HeadingParagraph, MentorImageContainer } from '../shared/styledComponents';
 import { mentors } from '../data/mentors';
 import MentorModal from '../components/Modals/MentorModal';
 
@@ -13,6 +13,7 @@ const MentorCard = styled.div`
   border: 2px solid #f4f4f4;
   border-radius: 20px;
   overflow: hidden;
+  cursor: pointer;
 `;
 
 const MentorStatus = styled.div`
@@ -35,27 +36,6 @@ const MentorDetails = styled.div`
   align-items: center;
   justify-content: center;
   text-transform: uppercase;
-`;
-
-const MentorImageContainer = styled.div`
-  margin-bottom: 30px;
-  padding: 10px;
-  height: 165px;
-  width: 165px;
-  background-color: white;
-  border: 1px solid var(--primary-color);
-  border-radius: 9999px;
-
-  .innerImage {
-    display: flex;
-    height: 100%;
-    width: 100%;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    overflow: hidden;
-    text-align: center;
-  }
 `;
 
 const MentorName = styled.h2`

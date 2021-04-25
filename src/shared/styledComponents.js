@@ -16,3 +16,24 @@ export const StyledButton = styled(Button)`
   border-radius: 9999px;
   color: #ffffff;
 `;
+
+export const MentorImageContainer = styled.div`
+  margin-bottom: 30px;
+  padding: 10px;
+  height: 165px;
+  width: 165px;
+  background-color: white;
+  border: 1px solid var(--primary-color);
+  border-radius: 9999px;
+
+  .innerImage {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    overflow: hidden;
+    text-align: center;
+  }
+`;
