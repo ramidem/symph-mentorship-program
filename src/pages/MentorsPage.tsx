@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import styled from 'styled-components';
 import { Col, Row } from 'reactstrap';
 import {
@@ -6,57 +6,9 @@ import {
   HeadingParagraph,
   LearnMore,
   MentorImageContainer,
-  StyledButton,
 } from '../shared/styledComponents';
 import { mentors } from '../data/mentors';
 import MentorModal from '../components/Modals/MentorModal';
-
-// import mentorImg from '../assets/images/mentor.png';
-
-const MentorCard = styled.div`
-  position: relative;
-  background-color: white;
-  border: 2px solid #f4f4f4;
-  border-radius: 20px;
-  overflow: hidden;
-  cursor: pointer;
-`;
-
-const MentorStatus = styled.div`
-  position: absolute;
-  height: 15px;
-  width: 15px;
-  background-color: #a1e3b4;
-  border-radius: 50%;
-  top: 15px;
-  right: 15px;
-`;
-
-const MentorDetails = styled.div`
-  display: flex;
-  position: relative;
-  padding: 30px;
-  height: 100%;
-  width: 100%;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-transform: uppercase;
-`;
-
-const MentorName = styled.h2`
-  font-size: 18px;
-  line-height: 18px;
-  color: var(--primary-color);
-`;
-
-const MentorTitle = styled.p`
-  margin: 0;
-  font-size: 12px;
-  font-weight: 700;
-  letter-spacing: 1px;
-  color: #8c8c8c;
-`;
 
 function MentorsPage() {
   const [modal, setModal] = useState(false);
@@ -133,4 +85,49 @@ const MentorsPageHeading = styled(Row)`
 
 const MentorsPageSubHeading = styled(Row)`
   margin-bottom: 70px;
+`;
+
+const MentorCard = styled.div`
+  position: relative;
+  background-color: white;
+  border: 2px solid #f4f4f4;
+  border-radius: 20px;
+  overflow: hidden;
+  cursor: pointer;
+`;
+
+const MentorStatus = styled.div`
+  position: absolute;
+  height: 15px;
+  width: 15px;
+  background-color: #a1e3b4;
+  border-radius: 50%;
+  top: 15px;
+  right: 15px;
+`;
+
+const MentorDetails = styled.div`
+  display: flex;
+  position: relative;
+  padding: 30px;
+  height: 100%;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+`;
+
+const MentorName = styled.h2`
+  font-size: 18px;
+  line-height: 18px;
+  color: var(--primary-color);
+`;
+
+const MentorTitle = styled.p`
+  margin: 0;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #8c8c8c;
 `;

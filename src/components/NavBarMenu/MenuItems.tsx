@@ -1,8 +1,5 @@
-import React from 'react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
-
-import { StyledButton } from '../../shared/styledComponents';
 
 const Item = styled.li`
   margin-right: 40px;
