@@ -89,19 +89,19 @@ function MentorsPage() {
 
   return (
     <>
-      <Row>
+      <MentorsPageHeading>
         <Col>
           <HeadingOne>Our Mentors</HeadingOne>
         </Col>
-      </Row>
-      <Row>
+      </MentorsPageHeading>
+      <MentorsPageSubHeading>
         <Col md={6}>
           <HeadingParagraph>
             Level up your career by learning from our experienced mentors. Be
             empowered and inspired as they teach you their expertise.
           </HeadingParagraph>
         </Col>
-      </Row>
+      </MentorsPageSubHeading>
 
       <Row>{renderMentorsCards}</Row>
 
@@ -118,6 +118,14 @@ function MentorsPage() {
 }
 
 export default MentorsPage;
+
+const MentorsPageHeading = styled(Row)`
+  margin-top: 90px;
+`;
+
+const MentorsPageSubHeading = styled(Row)`
+  margin-bottom: 70px;
+`;
 
 const LearnMore = styled(Row)`
   margin-top: 90px;
