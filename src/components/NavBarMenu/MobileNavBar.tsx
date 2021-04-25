@@ -6,6 +6,7 @@ import {
   Navbar,
   NavbarToggler,
 } from 'reactstrap';
+import styled from 'styled-components';
 
 import MenuItems from './MenuItems';
 import SiteTitle from './SiteTitle';
@@ -22,9 +23,9 @@ function MobileNavBar() {
         <NavbarToggler onClick={() => toggleNavbar()} className="mr-2" />
 
         <Collapse isOpen={!collapsed} navbar>
-          <Nav navbar>
+          <NavItems navbar>
             <MenuItems />
-          </Nav>
+          </NavItems>
         </Collapse>
       </Container>
     </Navbar>
@@ -32,3 +33,11 @@ function MobileNavBar() {
 }
 
 export default MobileNavBar;
+
+const NavItems = styled(Nav)`
+  margin-top: 20px;
+
+  li {
+    margin-bottom: 25px;
+  }
+`;
