@@ -6,7 +6,10 @@ import officeGirl from '../../assets/images/office_girl.svg';
 
 const HeadingWrapper = styled.div`
   padding: 165px 0 220px 0;
-  background: url(${officeGirl}) no-repeat right;
+  
+  @media (min-width: 992px) {
+    background: url(${officeGirl}) no-repeat right;
+  }
 `;
 
 function PageHeading() {
@@ -18,7 +21,7 @@ function PageHeading() {
         </Col>
       </Row>
       <Row>
-        <Col md={6}>
+        <Col md={12} lg={6}>
           <HeadingParagraph>
             Create opportunities to connect, build, and enhance your knowledge and
             skills as well as learn from experienced mentors
