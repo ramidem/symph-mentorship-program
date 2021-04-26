@@ -123,7 +123,7 @@ export const mentors: Mentor[] = [
   },
   {
     name: 'Jessa Pedrola',
-    expertise: 'Full-Stack Developer, Symph',
+    expertise: 'Full-Stack Developer',
     image: jessaImg,
     numberOfMentees: 1,
     bio:
