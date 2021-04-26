@@ -1,4 +1,3 @@
-<!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
 <p align="center">
   <a href="https://www.symph.co/">
     <img alt="Symph" src="./src/images/symph-logo.svg" width="60" />
